@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://embe-silk.vercel.app/api/images";
+const API_URL = "https://embecuachong.vercel.app/api/images";
 
 export const uploadImage = async (formData) => {
   const response = await axios.post(`${API_URL}/upload`, formData, {
