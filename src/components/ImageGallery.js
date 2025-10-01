@@ -130,11 +130,13 @@ const ImageGallery = React.forwardRef((props, ref) => {
                 >
                   Tải xuống
                 </Button>
-                <Input.Password
+                <Input
+                  type="number"
                   placeholder="Nhập mã xóa"
                   value={deleteCode}
                   onChange={(e) => setDeleteCode(e.target.value)}
                   style={{ width: 200 }}
+                  onPressEnter={(e) => e.preventDefault()}
                   disabled={deleting}
                 />
                 <Button danger onClick={handleDelete} loading={deleting}>
